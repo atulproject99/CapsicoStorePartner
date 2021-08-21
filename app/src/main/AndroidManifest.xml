@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="digi.coders.capsicostorepartner">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:requestLegacyExternalStorage="true"
+        android:usesCleartextTraffic="true"
+        android:name=".singletask.SingleTask"
+        android:theme="@style/mytheme">
+        <activity android:name=".activity.BookingTableDetails"></activity>
+        <activity android:name=".activity.ProductFullDetailActivity" />
+        <activity
+            android:name=".activity.MyReviewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.RestaurantMenuActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.WithDrawFormActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.FullImageViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.DeliverdOrderdActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.OrderListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.TrackRiderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.TrackOrderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.OrderSummaryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.OrderHistoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.OrderStatusActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.OrderDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.TransactionHistoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.WebActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.AddProductSuccessFullyActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.AddProductFormActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.AddProductActivity"
+            android:exported="true" />
+        <activity android:name=".activity.ManageProductActivity" />
+        <activity android:name=".activity.DocumentActivity" />
+        <activity android:name=".activity.ViewAccountActivity" />
+        <activity android:name=".activity.KYCStatusActivity" />
+        <activity
+            android:name=".activity.KYCActivity"
+            android:theme="@style/introtheme" />
+        <activity android:name=".activity.DashboardActivity" />
+        <activity
+            android:name=".activity.ResetPasswordActivity"
+            android:theme="@style/introtheme" />
+        <activity
+            android:name=".activity.ForgetPasswordActivity"
+            android:theme="@style/introtheme" />
+        <activity
+            android:name=".activity.OtpActivity"
+            android:theme="@style/introtheme" />
+        <activity
+            android:name=".activity.RegisterationActivity"
+            android:theme="@style/introtheme" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/introtheme" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@style/introtheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_6kz5nGEzi8uXRw" />
+    </application>
+
+</manifest>

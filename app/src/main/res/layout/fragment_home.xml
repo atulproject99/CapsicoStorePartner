@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/mainHome"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/current_Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sunday ,3 july 2021"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_blue"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabSelectedTextColor="@color/oragne"
+            app:tabTextColor="@color/color_black"
+            app:tabIndicatorHeight="4dp"
+            app:tabIndicatorColor="@color/color_blue"
+            android:background="@color/color_white">
+
+        </com.google.android.material.tabs.TabLayout>
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F9FCFD"
+            android:id="@+id/viewpager"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
